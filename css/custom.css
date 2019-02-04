@@ -366,10 +366,12 @@ box-sizing: border-box;
 display: table-row;
 }
 .table-contents{
-display: table-cell;
-vertical-align: middle;
-margin: 10px 0;
-box-sizing: border-box;
+position: absolute;
+left: 0;
+margin: auto;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
 }
 .cover-page {
 text-align: center;
