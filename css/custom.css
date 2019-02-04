@@ -57,7 +57,6 @@ box-sizing: border-box;
 }
 .bb-custom-wrapper{
 position: relative;
-/*float: left;*/
 width: 100%;
 }
 
@@ -131,7 +130,6 @@ overflow: hidden;
 font-size: 1.8em;
 padding: 20px 0;
 font-weight: 300;
-/*color: #fff;*/
 } 
 
 .menu-toc {
@@ -142,7 +140,6 @@ list-style: none;
 display: block;
 position: relative;
 overflow: hidden;
-/*color: #fff;*/
 font-size: 1.1em;
 line-height: 2;
 cursor: pointer;
@@ -173,7 +170,6 @@ border-bottom: 1px dotted #b9b2b2;
 .menu-toc li a .count{
 display: inline-block;
 width: 25px;
-/*color: #ccc;*/
 font-family: Times new roman;
 }
 
@@ -295,7 +291,7 @@ overflow: hidden;
 }
 
 .scroller {
-padding: 10px 5% 10px 5%;
+padding: 10px 20% 10px 20%;
 }
 
 .js .content:before,
@@ -548,9 +544,12 @@ stroke-dasharray: 0 100;
 
 .flex-wrapper {
 display: flex;
+align-items: center;
 flex-flow: row nowrap;
 }
-
+.flex-wrapper h3 {
+    width: 15%;
+}
 .single-chart {
 width: 10%;
 justify-content: space-around ;
@@ -660,6 +659,33 @@ font-family: sans-serif;
 font-size: 0.5em;
 text-anchor: middle;
 }
+.details01{
+    padding: 20px 0;
+}
+.details01 img{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.details01 .image{
+    float: left;
+    width: 50%;
+}
+.details01 .details{
+    float: left;
+    width: 50%;
+}
+.details01 .details p{
+    font-size: 2em;
+}
+@media screen and (max-width: 1024px){
+.scroller {
+padding: 10px 10% 10px 10%;
+}
+.single-chart{
+width: 15%;
+}
+}
 @media screen and (max-width: 800px){
 .no-js .menu-panel {
 display: none;
@@ -708,6 +734,9 @@ word-wrap: break-word;
 }
 
 @media screen and (max-width: 768px){
+.scroller {
+padding: 10px 5% 10px 5%;
+}
 .list-items li {
 width: 47.5%;
 }
@@ -734,6 +763,9 @@ margin-bottom: 12px;
 .flex-wrapper {
 display: block;
 overflow: hidden;
+}
+.flex-wrapper h3{
+width: auto !important;
 }
 .single-chart {
 width: 33.3%;
